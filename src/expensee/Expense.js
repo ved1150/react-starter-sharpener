@@ -1,4 +1,4 @@
-export default function Expense(props){
+ let Expense= (props) =>{
 
     return(
       <div>
@@ -8,3 +8,5 @@ export default function Expense(props){
       </div>
     )
 }
+
+export default Expense

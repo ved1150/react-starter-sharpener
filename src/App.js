@@ -1,6 +1,6 @@
-import Expense from "./Expense";
+import Expense from "./expensee/Expense";
 import Header from "./Header";
-function App() {
+let App =() => {
   let arr =[
     {
       title : "burger" ,
@@ -27,12 +27,9 @@ function App() {
     <>
       <div className="App">
         <h1>ved</h1>
-        <div>{
-            arr.map((item) => {
-           return <Expense title={item.title} amount={item.amount} location={item.location}/>
-            })
-            }
-            </div>
+        <div>{arr.map((obj) => {
+       return <Expense title={obj.title}  amount={obj.amount} location={obj.location}/>
+        })}</div>
         <Header />
       </div>
     </>
