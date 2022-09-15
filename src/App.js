@@ -1,4 +1,5 @@
 import Expense from "./expensee/Expense";
+// import Expenseform  from "./expensee/Expenseform ";
 import Header from "./Header";
 let App =() => {
   let arr =[
@@ -30,6 +31,7 @@ let App =() => {
         <div>{arr.map((obj) => {
        return <Expense title={obj.title}  amount={obj.amount} location={obj.location}/>
         })}</div>
+        {/* <Expenseform /> */}
         <Header />
       </div>
     </>
