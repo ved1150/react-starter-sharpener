@@ -5,7 +5,7 @@
 
     function deleteHandler(){
       setAmount(100)
-      console.log(amount)
+      console.log(amount  )
       
     }
     return(
